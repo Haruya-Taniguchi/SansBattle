@@ -91,7 +91,6 @@ int tuning_t1=255;
 int tuning_t2=255;
 void tuning() {
   int size = 24;
-  println(mouseY);
   if(up){
     tuning_t1=128;
   }else{

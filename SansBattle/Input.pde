@@ -157,6 +157,31 @@ void keyPressed()
   {
     left = true;
   }
+  
+  if ((keyCode == UP||key == 'w')&& set == 1)
+  {
+    MAX_HP +=1;
+    select.play();
+    select.rewind();
+  }
+  if ((keyCode == DOWN||key == 's')&&MAX_HP > 5&& set == 1)
+  {
+    MAX_HP -=1;
+    select.play();
+    select.rewind();
+  }
+  if ((keyCode == UP||key == 'w')&& set == 2)
+  {
+    ene_max += 10;
+    select.play();
+    select.rewind();
+  }
+  if (((keyCode == DOWN||key == 's')&& ene_max > 10)&& set == 2)
+  {
+    ene_max -= 10;
+    select.play();
+    select.rewind();
+  }
 }
 //----------------------------------------------------------------------------------
 void keyReleased() {
@@ -193,30 +218,6 @@ void keyReleased() {
   if (keyCode == LEFT)
   {
     left = false;
-  }
-  if ((keyCode == UP||key == 'w')&& set == 1)
-  {
-    MAX_HP +=1;
-    select.play();
-    select.rewind();
-  }
-  if ((keyCode == DOWN||key == 's')&&MAX_HP > 5&& set == 1)
-  {
-    MAX_HP -=1;
-    select.play();
-    select.rewind();
-  }
-  if ((keyCode == UP||key == 'w')&& set == 2)
-  {
-    ene_max += 10;
-    select.play();
-    select.rewind();
-  }
-  if (((keyCode == DOWN||key == 's')&& ene_max > 10)&& set == 2)
-  {
-    ene_max -= 10;
-    select.play();
-    select.rewind();
   }
   if (keyCode == ENTER)
   { 
