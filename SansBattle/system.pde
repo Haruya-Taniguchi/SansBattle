@@ -202,8 +202,7 @@ void display()//hpなどを表示
   textSize(30); 
   textAlign(CORNER);
   text("Frisk  LV.19   HP", 250+vx, 870+vy);
-  text("HP"+int(HP)+"/"+int(MAX_HP), 1050+vx, 870+vy);
-  println(mouseY);
+  text("KR"+int(HP)+"/"+int(MAX_HP), 1050+vx, 870+vy);
   noStroke();
   fill(255, 0, 0);
   rect(765+vx, 830+vy, 245, 55);
