@@ -255,7 +255,7 @@ class GSB
       text("↑", -245, 0);
       text("↑", 245, 0);
       textSize(60);
-      text("WARMING", 0, 0);
+      text("WARNING", 0, 0);
       textAlign(LEFT);
       popMatrix();
     }
