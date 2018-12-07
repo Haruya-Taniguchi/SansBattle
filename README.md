@@ -1,6 +1,6 @@
 # __SansBattle__
----
-UndertaleのSansを操作できる1on1の対戦ゲーム
+
+UndertaleのSans戦を再現したSansを操作できる1on1の対戦ゲーム
 
 ## Depandency
 開発言語：Processing
@@ -14,8 +14,8 @@ Sans -> 1P</br>
 主人公 -> 2P
 - __操作方法__
   - 1P
-    - Leap Motionの上で手を素早くスライドするとその方向にGasterBrasterで攻撃できる。
-    ※Leapに対して垂直な面でスライドすること。
+    - Leap Motionの上で手を素早くスライドするとその方向にGasterBrasterで攻撃できる。</br>
+    ※LeapMotionに対して垂直な面でスライドすること。
   - 2P
     - w,a,s,dキー、またはカーソルキーで移動。
 
