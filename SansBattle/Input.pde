@@ -3,7 +3,7 @@ float hand_x = 0, hand_y = 0, hand_z = 0;//手の座標
 float out_of_cursol_x = 1000;//x軸のはみ出し許容範囲
 float out_of_cursol_y = 800;//y軸のはみ出し許容範囲
 float  hand_px, hand_py, hand_pz;//１フレーム前の手の座標
-int slide_speed = 130;//スライドと見なす速さ
+int slide_speed = 110;//スライドと見なす速さ
 int slide_speed_mouse = 200;//マウスを使う場合のスライドと見なす速さ
 float slide_degrees;//スライドした角度
 float a_slide_degrees;//gsb本体の向き修正用の変数
@@ -29,8 +29,10 @@ void leepMotion() {
     hand_pz = hand_z;
 
     //手の座標を代入
-    hand_x = map(hand.getPosition().x, 300, 900, 0, width)-1000;
-    hand_y = map(hand.getPosition().y, 300, 500, 0, height)-2000;   
+    //hand_x = map(hand.getPosition().x, 300, 900, 0, width)-1000;
+    //hand_y = map(hand.getPosition().y, 300, 500, 0, height)-2000;   
+    hand_x = hand.getPosition().x*1.5-width/4;
+    hand_y = hand.getPosition().y*1.5-height/4;
     hand_z = hand.getPosition().z;
     if (hand_x < 0||hand_x > width||hand_y < 0||hand_y > height)
     {

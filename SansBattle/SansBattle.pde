@@ -52,8 +52,8 @@ boolean app_permit = true;
 void setup()
 {
   imageMode(CENTER);
-  //fullScreen(P2D);//フルスクリーンでプレイするときは画面解像度を1680x1050にしてください
-  size(1680,1050,P2D);
+  fullScreen(P2D);//フルスクリーンでプレイするときは画面解像度を1680x1050にしてください
+  //size(1680,1050,P2D);
   soul_size = 24;//ソウルの大きさ
   soul_speed = 4;//ソウルのスピード
   //枠のサイズに関する変数
